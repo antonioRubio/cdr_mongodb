@@ -208,7 +208,7 @@ static int mongodb_log(struct ast_cdr *cdr)
         ast_debug(1, "Unlocking mongodb_lock.\n");
         ast_mutex_unlock(&mongodb_lock);
         return 0;
-
+}
 
 static int load_config_string(struct ast_config *cfg, const char *category, const char *variable, struct ast_str **field, const char *def)
 {
